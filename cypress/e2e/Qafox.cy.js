@@ -7,12 +7,12 @@ describe('All for Qafox', () => {
     });
     it('Register', () => {
         cy.visit('https://tutorialsninja.com/demo/index.php?route=account/register')
-        cy.get('#input-firstname').type('vikash')
-        cy.get('#input-lastname').type('kumar')
-        cy.get('#input-email').type('vikashkumarbharti035@gmail.com')
-        cy.get('#input-telephone').type('6201530961')
-        cy.get('#input-password').type('vikash8674825048')
-        cy.get('#input-confirm').type('vikash8674825048')
+        cy.get('#input-firstname').type('Dushyant vikram')
+        cy.get('#input-lastname').type('Singh')
+        cy.get('#input-email').type('dushsingh20152016@gmail.com')
+        cy.get('#input-telephone').type('9131119272')
+        cy.get('#input-password').type('dushyant1234')
+        cy.get('#input-confirm').type('dushyant1234')
         cy.get('#content > form > fieldset:nth-child(3) > div > div > label:nth-child(1) > input[type=radio]').click()
         cy.get('#content > form > div > div > input[type=checkbox]:nth-child(2)').click()
         cy.get('#content > form > div > div > input.btn.btn-primary').click()
@@ -21,16 +21,16 @@ describe('All for Qafox', () => {
     });
     it('Login', () => {
         cy.visit('https://tutorialsninja.com/demo/index.php?route=account/login')
-        cy.get('#input-email').type('vikashkumarbharti035@gmail.com')
-        cy.get('#input-password').type('vikash8674825048')
+        cy.get('#input-email').type('dushsingh2052016@gmail.com')
+        cy.get('#input-password').type('dushyant1234')
         cy.get('#content > div > div:nth-child(2) > div > form > input').click()
     });
 
     it('Login with Forget forget password', () => {
         cy.visit('https://tutorialsninja.com/demo/index.php?route=account/login')
-        cy.get('#input-email').type('vikashkumarbharti035@gmail.com')
+        cy.get('#input-email').type('dushsingh20152016@gmail.com')
         cy.get('#content > div > div:nth-child(2) > div > form > div:nth-child(2) > a').click()
-        cy.get('#input-email').type('vikashkumarbharti035@gmail.com')
+        cy.get('#input-email').type('dushsingh20152016@gmail.com')
         cy.get('#content > form > div > div.pull-right > input').click()
     });
     it('Go to My Account', () => {
@@ -41,8 +41,8 @@ describe('All for Qafox', () => {
     it('Contact', () => {
         cy.visit('https://tutorialsninja.com/demo/index.php?route=information/contact')
         cy.get('#top-links > ul > li:nth-child(1) > a > i').click()
-        cy.get('#input-name').type('vikash')
-        cy.get('#input-email').type('vikashkumarbharti035@gmail.com')
+        cy.get('#input-name').type('dushyant')
+        cy.get('#input-email').type('dushsingh20152016@gmail.com')
         cy.get('#input-enquiry').type('enquiry')
         cy.get('#content > form > div > div > input').click()
     });
@@ -157,17 +157,17 @@ describe('All for Qafox', () => {
     it('Contact Us', () => {
         cy.visit('https://tutorialsninja.com/demo/index.php?route=information/contact')
         cy.get('#top-links > ul > li:nth-child(1) > a > i').click()
-        cy.get('#input-name').type('vikash')
-        cy.get('#input-email').type('vikashkumarbharti035@gmail.com')
+        cy.get('#input-name').type('Dushyant vikram')
+        cy.get('#input-email').type('dushsingh20152016@gmail.com')
         cy.get('#input-enquiry').type('enquiry')
         cy.get('#content > form > div > div > input').click()
     });
     it('Returns', () => {
         cy.visit('https://tutorialsninja.com/demo/index.php?route=account/return/add')
-        cy.get('#input-firstname').type('vikash')
-        cy.get('#input-lastname').type('kumar')
-        cy.get('#input-email').type('vikashkumarbharti035@gamail.com')
-        cy.get('#input-telephone').type('6201530961')
+        cy.get('#input-firstname').type('Dushyant vikram')
+        cy.get('#input-lastname').type('singh')
+        cy.get('#input-email').type('dushsingh20152016@gmail.com')
+        cy.get('#input-telephone').type('9131119272')
         cy.get('#input-order-id').type('1232456754')
         cy.get('#input-date-ordered').type('2024-11-15')
         cy.get('#input-product').type('Phone')
@@ -197,9 +197,9 @@ describe('All for Qafox', () => {
         cy.visit('https://tutorialsninja.com/demo/')
         cy.get('body > footer > div > div > div:nth-child(3) > ul > li:nth-child(2) > a').click()
         cy.get('body > footer > div > div > div:nth-child(3) > ul > li:nth-child(2) > a').type('phone')
-        cy.get('#input-to-email').type('vikashkumarbharti035@gmail.com')
-        cy.get('#input-from-name').type('vikash kumar')
-        cy.get('#input-from-email').type('vikashkumarbharti035@gmail.com')
+        cy.get('#input-to-email').type('dushsingh20152016@gmail.com')
+        cy.get('#input-from-name').type('dushyant vikram')
+        cy.get('#input-from-email').type('dushsingh20152016@gmail.com')
         cy.get('#content > form > div:nth-child(5) > div > div:nth-child(3) > label > input[type=radio]').click()
         cy.get('#input-message').type('I want to get me a gift')
         cy.get('#input-amount').type('233678')
@@ -209,8 +209,8 @@ describe('All for Qafox', () => {
     it('Affiliate', () => {
         cy.visit('https://tutorialsninja.com/demo/')
         cy.get('body > footer > div > div > div:nth-child(3) > ul > li:nth-child(3) > a').click()
-        cy.get('#input-email').type('vikashkumarbharti035@gmail.com')
-        cy.get('#input-password').type('vikash8674825048')
+        cy.get('#input-email').type('dushsingh20152016@gmail.com')
+        cy.get('#input-password').type('dushyant1234')
         cy.get('#content > div > div:nth-child(2) > div > form > input').click()
 
         
